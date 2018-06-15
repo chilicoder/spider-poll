@@ -1,0 +1,8 @@
+{{outlet}}
+<ul>
+  {{#each model as |answer|}}
+    {{#link-to 'overview' answer}}
+      <li>{{answer.value}} - {{answer.percents}}</li>
+    {{/link-to}}
+  {{/each}}
+</ul>

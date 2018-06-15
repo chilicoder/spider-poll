@@ -1,0 +1,13 @@
+{{outlet}}
+
+{{model.question}}
+
+<ul>
+  {{#each model.answers as |answer|}}
+    <li>
+      {{#link-to 'results' model}}
+        {{answer.value}}
+      {{/link-to}}
+    </li>
+  {{/each}}
+</ul>
