@@ -1,13 +1,26 @@
-{{outlet}}
+<div class="la-interactive__slide__slide la-interactive__slide__slideWithBackground la-interactive__slide__compact"
+     data-index="0"
+     style="background-image: url(&quot;https://media.giphy.com/media/qD7nG1IOgXOQU/giphy.gif?width=780&quot;); background-size: cover; background-position: center center; background-repeat: no-repeat; width: 780px; left: 0px; transition-duration: 0ms; transform: translate(0px, 0px) translateZ(0px);">
+  <fieldset>
+    <div class="la-interactive__slide__slideLegend">
+      <a href="#"
+         class="la-interactive__slide__slideMoveLeft la-interactive__slide__slideMoveDisabled">&lt;</a>
+      <div class="la-interactive__slide__slideTitle">{{model.question}}</div>
+      <a href="#" class="la-interactive__slide__slideMoveRight la-interactive__slide__slideMoveDisabled">&gt;</a></div>
 
-{{model.question}}
 
-<ul>
-  {{#each model.answers as |answer|}}
-    <li>
+    {{#each model.answers as |answer|}}
+
       {{#link-to 'answers.view' answer}}
-        {{answer.value}}
+        <div>{{answer.value}}</div>
       {{/link-to}}
-    </li>
-  {{/each}}
-</ul>
+
+    {{/each}}
+  </fieldset>
+  <footer>
+    <div><b>227</b> Abstimmende</div>
+    <div class="la-interactive__slide__paging">1/2</div>
+  </footer>
+</div>
+
+
