@@ -1,0 +1,11 @@
+{{#if showResult}}
+  <a href="#">
+    <div>{{answer.percents}}</div>
+  </a>
+
+{{else}}
+  <a href="#" {{action answerPoll answer}}>
+    <div>{{answer.value}}</div>
+  </a>
+{{/if}}
+

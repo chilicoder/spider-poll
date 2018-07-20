@@ -1,0 +1,12 @@
+<div class="la-interactive__slide__slideLegend">
+  <a href="#"
+     class="la-interactive__slide__slideMoveLeft la-interactive__slide__slideMoveDisabled">&lt;</a>
+  <div class="la-interactive__slide__slideTitle">{{poll.question}}</div>
+  <a href="#" class="la-interactive__slide__slideMoveRight la-interactive__slide__slideMoveDisabled">&gt;</a></div>
+
+{{#each poll.answers as |answer|}}
+  {{answer-option
+    answer=answer
+    showResult=poll.isAnswered
+    answerPoll=(action answerPoll poll)}}
+{{/each}}
