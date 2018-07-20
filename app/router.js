@@ -9,7 +9,7 @@ const Router = EmberRouter.extend({
 Router.map(function() {
   this.route('poll');
   this.route('answers', function() {
-    this.route('view', { path: 'answers/:answer_id' });
+    this.route('view', { path: ':answer_id' });
   });
 });
 
