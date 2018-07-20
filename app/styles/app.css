@@ -1,4 +1,4 @@
-/*
+
 svg {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
 }
@@ -13,8 +13,7 @@ body {
 html {
   box-sizing: border-box
 }
-*/
-/*
+
 *, :after, :before {
   box-sizing: inherit
 }
