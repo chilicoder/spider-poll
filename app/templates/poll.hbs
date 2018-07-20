@@ -5,7 +5,7 @@
 <ul>
   {{#each model.answers as |answer|}}
     <li>
-      {{#link-to 'results' model}}
+      {{#link-to 'answers.view' answer}}
         {{answer.value}}
       {{/link-to}}
     </li>
